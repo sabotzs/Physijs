@@ -1,0 +1,43 @@
+{
+  "name": "physijs",
+  "version": "1.0.0",
+  "description": "Physics plugin for Three.js - compatible with Three.js r162 and r150",
+  "main": "physi.js",
+  "module": "physi.module.js",
+  "types": "index.d.ts",
+  "files": [
+    "physi.js",
+    "physi.module.js",
+    "physijs_worker.js",
+    "index.d.ts",
+    "LICENSE",
+    "README.md"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sabotzs/Physijs.git"
+  },
+  "keywords": [
+    "physics",
+    "three.js",
+    "3d",
+    "ammo.js",
+    "webgl",
+    "simulation"
+  ],
+  "author": "Chandler Prall (original), Pavel Boytchev (fork maintainer)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sabotzs/Physijs/issues"
+  },
+  "homepage": "https://github.com/sabotzs/Physijs#readme",
+  "peerDependencies": {
+    "three": ">=0.150.0"
+  },
+  "engines": {
+    "node": ">=12.0.0"
+  }
+}

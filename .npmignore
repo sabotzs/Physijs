@@ -1,0 +1,6 @@
+examples/
+.git/
+.gitignore
+_config.yml
+*.bak
+node_modules/
