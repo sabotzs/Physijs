@@ -9,6 +9,7 @@
     "physi.js",
     "physi.module.js",
     "physijs_worker.js",
+    "ammo.js",
     "index.d.ts",
     "LICENSE",
     "README.md"
