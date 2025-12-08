@@ -130,16 +130,13 @@ declare namespace Physijs {
   }
 
   export class PointConstraint extends Constraint {
-    constructor(objecta: Mesh, position: THREE.Vector3, objectb?: Mesh);
+    constructor(objecta: Mesh, position: THREE.Vector3);
+    constructor(objecta: Mesh, objectb: Mesh, position: THREE.Vector3);
   }
 
   export class HingeConstraint extends Constraint {
-    constructor(
-      objecta: Mesh,
-      position: THREE.Vector3,
-      axis: THREE.Vector3,
-      objectb?: Mesh
-    );
+    constructor(objecta: Mesh, position: THREE.Vector3, axis: THREE.Vector3);
+    constructor(objecta: Mesh, objectb: Mesh, position: THREE.Vector3, axis: THREE.Vector3);
 
     setLimits(low: number, high: number, bias_factor?: number, relaxation_factor?: number): void;
     enableAngularMotor(velocity: number, acceleration: number): void;
@@ -147,12 +144,8 @@ declare namespace Physijs {
   }
 
   export class SliderConstraint extends Constraint {
-    constructor(
-      objecta: Mesh,
-      position: THREE.Vector3,
-      axis: THREE.Vector3,
-      objectb?: Mesh
-    );
+    constructor(objecta: Mesh, position: THREE.Vector3, axis: THREE.Vector3);
+    constructor(objecta: Mesh, objectb: Mesh, position: THREE.Vector3, axis: THREE.Vector3);
 
     setLimits(lin_lower: number, lin_upper: number, ang_lower: number, ang_upper: number): void;
     setRestitution(linear: number, angular: number): void;
@@ -163,11 +156,7 @@ declare namespace Physijs {
   }
 
   export class ConeTwistConstraint extends Constraint {
-    constructor(
-      objecta: Mesh,
-      objectb: Mesh,
-      position: THREE.Vector3,
-    );
+    constructor(objecta: Mesh, objectb: Mesh, position: THREE.Vector3);
 
     setLimit(x: number, y: number, z: number): void;
     enableMotor(): void;
@@ -177,11 +166,8 @@ declare namespace Physijs {
   }
 
   export class DOFConstraint extends Constraint {
-    constructor(
-      objecta: Mesh,
-      position: THREE.Vector3,
-      objectb?: Mesh,
-    );
+    constructor(objecta: Mesh, position: THREE.Vector3);
+    constructor(objecta: Mesh, objectb: Mesh, position: THREE.Vector3);
 
     setLinearLowerLimit(limit: THREE.Vector3): void;
     setLinearUpperLimit(limit: THREE.Vector3): void;
